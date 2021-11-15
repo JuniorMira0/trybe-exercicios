@@ -1,0 +1,8 @@
+internet
+unix
+bash
+trybe
+programação
+javascript
+phyton
+junior
