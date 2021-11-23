@@ -1,19 +1,9 @@
-.super-mario {
-  width: 200px;
+* {
+  list-style: none;
 }
-
-.goomba {
-  width: 100px;
+h1 , p {
+  text-align: center;
 }
-
-.baloon {
-
-}
-
-.speach {
-  font-size: 25px;
-}
-
-.bowser {
-  width: 200px;
+ul:hover {
+  background-color: aqua;
 }
