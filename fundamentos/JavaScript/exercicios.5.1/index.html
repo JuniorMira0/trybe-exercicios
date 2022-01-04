@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      // part 1
+      const addElement = document.createElement('h1');
+      addElement.innerText = 'Exercicios 5.2 - JavaScript DOM';
+      document.body.appendChild(addElement);
+      // part 2
+      const addTagMain = document.createElement('main');
+      addTagMain.className = 'main-content';
+      document.body.appendChild(addTagMain);
+      // part 3
+      const addTagSection = document.createElement('section');
+      addTagSection.className = 'center-content';
+      addTagMain.appendChild(addTagSection);
+      // part 4
+      const addTagP = document.createElement('p');
+      addTagP.innerText = 'Adiciona um texto aleatorio';
+      addTagSection.appendChild(addTagP);
+      // part 5
+      const addOtherSection = document.createElement('section');
+      addOtherSection.className = 'left-content';
+      addTagMain.appendChild(addOtherSection);
+      // part 6
+      const addOtherSection2 = document.createElement('section');
+      addOtherSection2.className = 'right-content';
+      addTagMain.appendChild(addOtherSection2);
+      // part 7
+      const addImg = document.createAttribute('img');
+      addElement.className = 'right-content';
+      addElement.src = 'https://picsum.photos/200';
+      addOtherSection.appendChild(addImg);
+      // part 8
+      const addList = document.createAttribute('ul');
+      
+      
+      
+
+    </script>
+  </body>
+</html>
