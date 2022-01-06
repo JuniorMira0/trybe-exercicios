@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="main-content">
+          <fieldset>
+            <legend>Formulário de currículo</legend>
+            <div class="content">
+              <label for="name">Nome:</label>
+              <br />
+              <input type="text" maxlength="40" autofocus required />
+            </div>
+
+            <div class="content">
+              <label for="email">Email:</label>
+              <br />
+              <input type="text" maxlength="50" required />
+            </div>
+
+            <div class="content">
+              <label for="cpf">CPF:</label>
+              <br />
+              <input type="text" maxlength="11" required />
+            </div>
+
+            <div class="content">
+              <label for="address">Endereço:</label>
+              <br />
+              <input type="text" maxlength="200" required />
+            </div>
+
+            <div class="content">
+              <label for="city">Cidade:</label>
+              <br />
+              <input type="text" maxlength="28" required />
+            </div>
+
+            <div class="content">
+              <label for="state">Estado:</label>
+              <br />
+              <select name="estados" id="select-estados" required>
+                <option value="">Selecione seu estado</option>
+              </select>
+            </div>
+
+            <div class="content">
+              <label for="housetype">Tipo de imovel: </label>
+              <label for="house">
+                <input
+                  type="radio"
+                  name="housetype"
+                  id="house"
+                  value="house"
+                  required
+                />
+                Casa
+              </label>
+              <label for="apartament">
+                <input
+                  type="radio"
+                  name="housetype"
+                  id="apartament"
+                  value="apartament"
+                  required
+                />
+                Apartamento
+              </label>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Resumo do curriculo:</legend>
+            <div class="content">
+              <label for="resume"> </label>
+              <textarea
+                name="resume"
+                id="resume"
+                maxlength="1000"
+                cols="50"
+                rows="5"
+                required
+              ></textarea>
+              <br />
+              <div class="content">
+                <label for="job">Cargo:</label>
+                <br />
+                <input type="text" maxlength="40" required />
+              </div>
+              <div class="content">
+                <label for="jobStatus">Descrição do cargo:</label>
+                <br />
+                <input
+                  type="text"
+                  name="jobStatus"
+                  id="jobStatus"
+                  maxlength="500"
+                  required
+                />
+              </div>
+              <div class="content">
+                <label for="date">Data de inicio: </label>
+                <br />
+                <input type="date" name="date" id="date" />
+              </div>
+            </div>
+          </fieldset>
+          <div class="content">
+            <button type="submit" id="sendForm">Enviar</button>
+            <button type="button" id="clearForm">Limpar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
